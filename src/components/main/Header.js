@@ -6,7 +6,7 @@ class Header extends Component{
         return(
             <header className="header">
                 <div className="container">
-                    <h1 className="header_title" onClick={() => this.props.history.push("/")}><span style={{color: '#FF3300'}}>U</span>SO</h1>
+                    <h1 className="header_title" onClick={() => this.props.history.push("/USO")}><span style={{color: '#FF3300'}}>U</span>SO</h1>
                     <ul className="header_nav">
                         <li onClick={() => this.props.history.push("/")}>Home</li>
                         <li onClick={() => this.props.history.push("/Foods")}>Food</li>
