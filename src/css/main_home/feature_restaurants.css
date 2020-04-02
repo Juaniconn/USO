@@ -1,0 +1,77 @@
+/* feature restaurants  */
+
+.feature_restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10rem 0;
+
+    & h2{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    & .restaurants_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        width: 100%;
+
+        & .restaurants_item{
+            border: .1rem solid var(--border_opacity);
+            position: relative;
+            display: grid;
+            width: 100%;
+            grid-template-columns: 20rem 1fr;
+            grid-template-rows: 15rem;
+
+            & button{
+                @apply --btn_cta;
+                bottom: 2rem;
+                right: 2rem;
+            }
+
+            & button:hover{
+                background-color: rgb(170, 34, 0);
+            }
+
+            & .restaurant_content{
+                padding: 2rem;
+
+                & h3{
+                    font-size: 2rem;
+                }
+
+                & p{
+                    font-size: 1.6rem;
+                }
+            }
+
+            & .restaurant_img{
+                width: 10rem;
+                height: 10rem;
+                padding: 1rem;
+                border: .1rem solid rgba(0, 0, 0, 0.2);
+                align-self: center;
+                justify-self: center;
+            }
+
+            & .restaurant_img.a{
+                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+            }
+            & .restaurant_img.b{
+                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+            }
+            & .restaurant_img.c{
+                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+            }
+            & .restaurant_img.d{
+                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+            }
+        }
+
+        & .restaurants_item:hover{
+            box-shadow: 2px 5px 15px 0px rgba(0,0,0,0.25);
+        }
+    }
+}   

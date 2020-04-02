@@ -1,0 +1,50 @@
+/* restaurant_selected  */
+
+.restaurant_selected{
+    background: url(./img/bg3.jpg) center center / cover no-repeat;
+    height: 25rem;
+    margin-top: 7rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    
+    & .restaurant_sel_wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        & .restaurant_sel_img{
+            width: 10rem;
+            height: 10rem;
+            background: url(./img/restaurant_1.png) center center / cover no-repeat;;
+            margin-right: 4rem;
+        }
+
+        &  .restaurant_sel_content{
+            display: flex;
+            color: white;
+            flex-direction: column;
+            width: 50%;
+            & h2{
+                margin-bottom: 2rem;
+                font-size: 2.6rem;
+            }
+
+            & p{
+                font-size: 1.6rem;
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
+.restaurant_selected::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--opacity);
+}

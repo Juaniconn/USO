@@ -1,0 +1,12 @@
+@import 'global.css';
+@import 'vars.css';
+@import 'basic.css';
+@import 'header.css';
+@import 'hero.css';
+@import 'animation.css';
+@import 'feature_foods.css';
+@import 'steps_order.css';
+@import 'feature_restaurants.css';
+@import 'footer.css';
+
+@import '../restaurant/restaurant_selected.css'

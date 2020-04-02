@@ -1,0 +1,47 @@
+/* header  */
+
+.header{
+    background: url(./img/bg2.jpg) center center / cover no-repeat;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    z-index: 9999;
+}
+
+.header_title{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    line-height: 7rem;
+
+    font-family: cursive;
+}
+
+.header_nav{
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: inherit;
+    flex-wrap: inherit;
+
+    & li{
+        color: white;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        cursor: pointer;
+        line-height: 7rem;
+        padding: 0 1rem;
+        transition: 450ms all;
+    }
+
+    & li:hover{
+        color: var(--brand_color1);
+        background-color: white;
+    }
+}

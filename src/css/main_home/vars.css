@@ -1,0 +1,25 @@
+/* vars */
+
+:root{
+    --brand_color1: #040F1A;
+    --brand_color2: #ff3300;
+    --textUnselected_color: #818181;
+
+    --opacity: rgba(1,1,6,0.7);
+    --border_opacity: rgba(0,0,0,0.2);
+
+    --btn_cta: {
+        outline: none;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: .2rem;
+        font-size: 1.6rem;
+        background-color: var(--brand_color2);
+        color: white;
+        transition: 450ms all;
+        cursor: pointer;
+    }
+}

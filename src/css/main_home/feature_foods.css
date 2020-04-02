@@ -1,0 +1,95 @@
+/* feature foods */
+
+.feature_food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+
+    & h2, & p, & h3, & span{
+        color: var(--brand_color1);
+    }
+
+    & h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    & p{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    & .food_restaurants_wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+
+        & .food_restaurants_item{
+            width: 30%;
+            margin-bottom: 4rem;
+            & .food_restaurant_img{
+                height: 20rem;
+                width: 100%;
+                position: relative;
+            }
+
+            & .food_restaurant_img::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                cursor: pointer;
+            }
+
+            & .food_restaurant_content{
+                height: 20rem;
+                position: relative;
+                padding: 1rem;
+                transition: 450ms all;
+                & h3{
+                    font-size: 2.2rem;
+                    margin-bottom: 1rem;
+                }
+                & p{
+                    font-size: 1.6rem;
+                    font-weight: lighter;
+                }
+
+                & span{
+                    font-size: 2.2rem;
+                    font-weight: bolder;
+                    position: absolute;
+                    bottom: 1rem;
+                    left: 1rem;
+                }
+
+                & button{
+                    @apply --btn_cta;
+                }
+
+                & button:hover{
+                    background-color: rgb(170, 34, 0);
+                }
+            }
+
+            & .food_restaurant_content:hover{
+                box-shadow: 2px 5px 20px 0px rgba(0,0,0,0.35);
+            }
+
+            & .food_restaurant_img.a{
+                background: url(./img/bg.jpg) center center / cover no-repeat;
+            }
+            & .food_restaurant_img.b{
+                background: url(./img/bg.jpg) center center / cover no-repeat;
+            }
+            & .food_restaurant_img.c{
+                background: url(./img/bg.jpg) center center / cover no-repeat;
+            }
+        }
+    }
+}
+

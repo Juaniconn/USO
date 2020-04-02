@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './Header'
-import Hero from './Hero'
-import FeatureFood from './Feature_Foods'
-import StepsOrder from './Steps_Order'
-import FeatureResturants from './Feature_Restaurants'
-import Footer from './Footer'
+import Header from '../main/Header'
+import Hero from '../main/Hero'
+import FeatureFood from '../main/Feature_Foods'
+import StepsOrder from '../main/Steps_Order'
+import FeatureResturants from '../main/Feature_Restaurants'
+import Footer from '../main/Footer'
 
 function Main_Home(){
     return (

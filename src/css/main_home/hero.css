@@ -1,0 +1,93 @@
+/* hero */
+
+.hero{
+    padding-top: 7rem;
+    background: url(./img/bg.jpg) center center / cover no-repeat;
+    position: relative;
+    
+    & .hero_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        padding: 10rem 0;
+        
+        & h1{
+            color: white;
+            font-size: 10rem;
+            margin-bottom: 5rem;
+            font-family: cursive;
+        }
+        & p{
+            color: white;
+            font-weight: lighter;
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        & .hero_cta{
+            margin-bottom: 5rem;
+            & form{
+                & input{
+                    outline: none;
+                    padding: 2rem 3rem;
+                    border: none;
+                    border-radius: .2rem;
+                    font-size: 1.6rem;
+                }
+                
+                & .form_search{
+                    margin-right: .5rem;
+                    width: 40rem;
+                }
+                & .form_submit{
+                    outline: none;
+                    background-color: var(--brand_color2);
+                    color: white;
+                    transition: 450ms all;
+                    cursor: pointer;
+                }
+
+                & .form_submit:hover{
+                    background-color: rgb(170, 34, 0);
+                }
+            }
+        }
+    
+        & .hero_steps{
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+    
+            & .hero_steps_item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & i{
+                    color: white;
+                    font-size: 4rem;  
+                    margin-bottom: 1rem;              
+                }
+    
+                & p{
+                    font-size: 1.6rem;
+                    & span{
+                        margin-right: 1rem;
+                        font-size: 1.8rem;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--opacity);
+}
