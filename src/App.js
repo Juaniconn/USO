@@ -15,7 +15,10 @@ function App() {
         <Route exact path="/USO" component={Main_Home} />
         <Route path="/Foods" component={Food_Home} />
         <Route exact path="/Restaurants" component={Restaurant_Home} />
-        <Route path="/Restaurants/Selected" component={Restaurant_Selected} />
+        <Route path="/Restaurants/FlorDeCordoba" component={() => <Restaurant_Selected state={`a`}/>} />
+        <Route path="/Restaurants/Taquitos" component={() => <Restaurant_Selected state={`b`}/>} />
+        <Route path="/Restaurants/Cafeteria" component={() => <Restaurant_Selected state={`c`}/>} />
+        <Route path="/Restaurants/Limon&Chia" component={() => <Restaurant_Selected state={`d`}/>} />
         <Route path="/Register" component={Regitser_Home} />
         <Route path="/Checkout" component={Checkout_Home} />
       </Switch>

@@ -22,7 +22,7 @@
 
     & .food_restaurants_wrapper{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         gap: 2rem;
         flex-wrap: wrap;
         width: 100%;
@@ -98,6 +98,10 @@
         & button{
             width: 100%;
             height: 5rem;
+        }
+
+        & .food_restaurants_wrapper{
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         }
     }
 }

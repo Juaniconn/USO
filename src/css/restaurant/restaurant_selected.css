@@ -2,7 +2,7 @@
 
 .restaurant_selected{
     background: url(./img/bg3.jpg) center center / cover no-repeat;
-    height: 25rem;
+    height: 30rem;
     margin-top: 7rem;
     position: relative;
     display: flex;
@@ -17,8 +17,20 @@
         & .restaurant_sel_img{
             width: 10rem;
             height: 10rem;
-            background: url(./img/restaurant_1.png) center center / cover no-repeat;;
             margin-right: 4rem;
+        }
+        
+        & .restaurant_sel_img.a{
+            background: url(./img/restaurant_3.png) center center / contain no-repeat;
+        }
+        & .restaurant_sel_img.b{
+            background: url(./img/restaurant_4.png) center center / contain no-repeat;
+        }
+        & .restaurant_sel_img.c{
+            background: url(./img/restaurant_2.png) center center / contain no-repeat;
+        }
+        & .restaurant_sel_img.d{
+            background: url(./img/restaurant_1.png) center center / contain no-repeat;
         }
 
         &  .restaurant_sel_content{
@@ -34,6 +46,7 @@
             & p{
                 font-size: 1.6rem;
                 font-weight: lighter;
+                line-height: 2rem;
             }
         }
     }
@@ -47,4 +60,22 @@
     right: 0;
     bottom: 0;
     background-color: var(--opacity);
+}
+
+@media (--extra-small){
+    .restaurant_selected{
+        padding: 2rem 0;
+        & .restaurant_sel_wrapper{
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
+            gap: 2.5rem;
+            & div{
+                justify-self: center;
+                margin: 0 !important;
+            }
+            & .restaurant_sel_content{
+                width: 100% !important;
+            }
+        }
+    }
 }

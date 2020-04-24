@@ -8,21 +8,25 @@ class Feature_Restaurants extends Component{
             {
                 title: 'Limon y Chia',
                 image: 'a',
+                index: 'Limon&Chia',
                 description: 'Nuestro objetivo primordial es estar presente en escuelas y universidades porque después de la familia lo que queremos es apoyar la educación a través de una alimentación inteligente.'
             },
             {
                 title: 'Cafeteria',
                 image: 'b',
+                index: 'Cafeteria',
                 description: 'El Sistema de Cafeterías UAG opera bajo un programa de alimentación saludable que contribuye al cuidado de nuestros comensales a través de una dieta sana y balanceada.'
             },
             {
                 title: 'Taquitos',
                 image: 'c',
+                index: 'Taquitos',
                 description: 'Un lugar donde encuentras tu comida favorita al instante, no esperes largas filas!'
             },
             {
                 title: 'Flor de Cordoba',
                 image: 'd',
+                index: 'FlorDeCordoba',
                 description: 'Somos un lugar de encuentro en el barrio, parte de la rutina diaria… y no hay nada que nos haga más felices. Ven a conocernos y lo comprobarás: somos mucho más que los cafés que elaboramos.'
             }
 
@@ -40,7 +44,7 @@ class Feature_Restaurants extends Component{
                                     <div className="restaurant_content">
                                         <h3> {restaurant.title} </h3>
                                         <p> {restaurant.description} </p>
-                                        <button onClick={() => this.props.history.push("/Restaurants/Selected")} >See Restaurant</button>
+                                        <button onClick={() => this.props.history.push(`/Restaurants/${restaurant.index}`)} >See Restaurant</button>
                                     </div>
                                 </div>
                             )
