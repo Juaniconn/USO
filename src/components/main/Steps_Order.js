@@ -8,21 +8,21 @@ function Steps_Order(){
                 <div className="steps_wrapper">
                     <div className="steps_item">
                         <i className="icon-shop"></i>
-                        <h3>Choose a restaurant</h3>
-                        <p>We've got your covered with menus from over 345 delivery restaurants online.</p>
+                        <h3>Escoge un restaurante</h3>
+                        <p>Hay restaurantes para varios tipos de apetitos, elige sabiamente!</p>
                     </div>
                     <div className="steps_item">
                         <i className="icon-fastfood"></i>
-                        <h3>Choose a tasty dish</h3>
-                        <p>We've got your covered with menus from over 345 delivery restaurants online.</p>
+                        <h3>Escoge tu comida favorita</h3>
+                        <p>Cada tipo de comida significa algo muy importante en tu dia, elige en una gran variead para llenar tu apetito</p>
                     </div>
                     <div className="steps_item">
                         <i className="icon-delivery_dining"></i>
-                        <h3>Take out</h3>
-                        <p>We've got your covered with menus from over 345 delivery restaurants online.</p>
+                        <h3>Recoge tu comida</h3>
+                        <p>A disfrutar. Provecho!</p>
                     </div>
                 </div>
-                <p>Pay by Cash, Card or Paypal</p>
+                <p>El pago puede ser por tarjeta o en efectivo</p>
             </div>
         </section>
     )

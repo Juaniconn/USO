@@ -6,24 +6,24 @@ class Feature_Restaurants extends Component{
 
         const options = [
             {
-                title: 'Title (Name of the food)',
+                title: 'Limon y Chia',
                 image: 'a',
-                description: 'Description A'
+                description: 'Nuestro objetivo primordial es estar presente en escuelas y universidades porque después de la familia lo que queremos es apoyar la educación a través de una alimentación inteligente.'
             },
             {
-                title: 'Title (Name of the food)',
+                title: 'Cafeteria',
                 image: 'b',
-                description: 'Description B'
+                description: 'El Sistema de Cafeterías UAG opera bajo un programa de alimentación saludable que contribuye al cuidado de nuestros comensales a través de una dieta sana y balanceada.'
             },
             {
-                title: 'Title (Name of the food)',
+                title: 'Taquitos',
                 image: 'c',
-                description: 'Description C'
+                description: 'Un lugar donde encuentras tu comida favorita al instante, no esperes largas filas!'
             },
             {
-                title: 'Title (Name of the food)',
+                title: 'Flor de Cordoba',
                 image: 'd',
-                description: 'Description d'
+                description: 'Somos un lugar de encuentro en el barrio, parte de la rutina diaria… y no hay nada que nos haga más felices. Ven a conocernos y lo comprobarás: somos mucho más que los cafés que elaboramos.'
             }
 
         ];
@@ -31,7 +31,7 @@ class Feature_Restaurants extends Component{
         return (
             <section className="feature_restaurants">
                 <div className="container">
-                    <h2>Restaunrants</h2>
+                    <h2>Restaurantes</h2>
                     <div className="restaurants_wrapper">
                         {options.map(restaurant =>{
                             return (

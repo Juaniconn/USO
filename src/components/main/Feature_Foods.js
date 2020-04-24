@@ -29,8 +29,8 @@ class Feature_Food extends Component{
         return (
             <section className="feature_food">
                 <div className="container">
-                    <h2>¡Popular In Your Institution!</h2>
-                    <p>The easiest way to your favourite food</p>
+                    <h2>¡Lo mas popular en tu institución!</h2>
+                    <p>La mejor manera de obtener tu comida favorita</p>
                     <div className="food_restaurants_wrapper">
                         {options.map(food_menu =>{
                             return (

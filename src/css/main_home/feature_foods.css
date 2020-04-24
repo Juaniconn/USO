@@ -21,13 +21,13 @@
     }
 
     & .food_restaurants_wrapper{
-        display: flex;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2rem;
         flex-wrap: wrap;
         width: 100%;
 
         & .food_restaurants_item{
-            width: 30%;
             margin-bottom: 4rem;
             & .food_restaurant_img{
                 height: 20rem;
@@ -93,3 +93,11 @@
     }
 }
 
+@media (--extra-small){
+    .feature_food{
+        & button{
+            width: 100%;
+            height: 5rem;
+        }
+    }
+}

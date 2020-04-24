@@ -88,3 +88,14 @@
         font-weight: lighter;
     }
 }
+
+@media (--extra-small){
+    .steps_order{
+        & .steps_wrapper{
+            display: grid;
+            & .steps_item{
+                width: 100%;
+            }
+        }
+    }
+}

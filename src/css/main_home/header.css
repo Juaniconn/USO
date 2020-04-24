@@ -11,6 +11,11 @@
     align-items: center;
     height: 7rem;
     z-index: 9999;
+
+    & .icon-menu{
+        display: none;
+        color: white;;
+    }
 }
 
 .header_title{
@@ -43,5 +48,49 @@
     & li:hover{
         color: var(--brand_color1);
         background-color: white;
+    }
+}
+
+@media (--extra-small){
+    .header{
+        & .header_nav{
+            position: fixed;
+            transform: translateX(100%);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            flex-direction: column;
+            justify-content: center;
+            background: url(./img/bg2.jpg) center center / cover no-repeat;
+            transition: 450ms all;
+            & li{
+                width: 80%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            & span{
+                display: block;
+                color: white;
+                position: absolute;
+                top: 5rem;
+                font-size: 2rem;
+                font-weight: bolder;
+                right: 5rem;
+            }
+        }
+
+        & .header_nav.show{
+            transform: translateX(0);
+        }
+        & .header_nav.hide{
+            transform: translateX(100%);
+        }
+        & .icon-menu{
+            display: block;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 2rem 0;
+        }
     }
 }

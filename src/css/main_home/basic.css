@@ -38,11 +38,10 @@ h1,h2,h3,h4,h5,h6,p {
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('./fonts/icomoon.eot?k6tzaj');
-    src:  url('./fonts/icomoon.eot?k6tzaj#iefix') format('embedded-opentype'),
-      url('./fonts/icomoon.ttf?k6tzaj') format('truetype'),
-      url('./fonts/icomoon.woff?k6tzaj') format('woff'),
-      url('./fonts/icomoon.svg?k6tzaj#icomoon') format('svg');
+    src:  url('./fonts/icomoon1.eot?k6tzaj');
+    src:  url('./fonts/icomoon1.eot?k6tzaj#iefix') format('embedded-opentype'),
+      url('./fonts/icomoon1.ttf?k6tzaj') format('truetype'),
+      url('./fonts/icomoon1.woff?k6tzaj') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -87,4 +86,35 @@ h1,h2,h3,h4,h5,h6,p {
   .icon-shop:before {
     content: "\e903";
   }
+
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('./fonts/icomoon2.eot?p4om44');
+    src:  url('./fonts/icomoon2.eot?p4om44#iefix') format('embedded-opentype'),
+      url('./fonts/icomoon2.ttf?p4om44') format('truetype'),
+      url('./fonts/icomoon2.woff?p4om44') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
   

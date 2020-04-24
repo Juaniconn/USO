@@ -10,7 +10,6 @@
 
     --btn_cta: {
         outline: none;
-        position: absolute;
         bottom: 1rem;
         right: 1rem;
         padding: 1rem 2rem;
@@ -23,3 +22,8 @@
         cursor: pointer;
     }
 }
+
+@custom-media --extra-small (width < 480px);
+@custom-media --small (width < 780px);
+@custom-media --medium (width < 1024px);
+@custom-media --large (width < 1440px);

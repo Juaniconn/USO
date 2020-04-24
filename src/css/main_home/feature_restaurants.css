@@ -23,12 +23,13 @@
             display: grid;
             width: 100%;
             grid-template-columns: 20rem 1fr;
-            grid-template-rows: 15rem;
+            grid-template-rows: auto;
 
             & button{
                 @apply --btn_cta;
                 bottom: 2rem;
                 right: 2rem;
+                display: block;
             }
 
             & button:hover{
@@ -37,36 +38,38 @@
 
             & .restaurant_content{
                 padding: 2rem;
-
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 & h3{
                     font-size: 2rem;
                 }
 
                 & p{
                     font-size: 1.6rem;
+                    margin: 2rem 0;
                 }
             }
 
             & .restaurant_img{
-                width: 10rem;
-                height: 10rem;
+                width: 15em;
+                height: 15rem;
                 padding: 1rem;
-                border: .1rem solid rgba(0, 0, 0, 0.2);
                 align-self: center;
                 justify-self: center;
             }
 
             & .restaurant_img.a{
-                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+                background: url(./img/restaurant_1.png) center center / contain no-repeat;
             }
             & .restaurant_img.b{
-                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+                background: url(./img/restaurant_2.png) center center / contain no-repeat;
             }
             & .restaurant_img.c{
-                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+                background: url(./img/restaurant_4.png) center center / contain no-repeat;
             }
             & .restaurant_img.d{
-                background: url(./img/restaurant_1.png) center center / cover no-repeat;
+                background: url(./img/restaurant_3.png) center center / contain no-repeat;
             }
         }
 
@@ -75,3 +78,17 @@
         }
     }
 }   
+
+@media (--small){
+    .feature_restaurants{
+        & .restaurants_wrapper{
+            grid-template-columns: repeat(1,1fr);
+            & .restaurants_item{
+                grid-template-columns: repeat(1,1fr);
+                & .restaurant_img{
+                    margin: 4rem;
+                }
+            }
+        }
+    }
+}

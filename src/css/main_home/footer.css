@@ -71,3 +71,38 @@
         font-size: 1.6rem;
     }
 }
+
+@media (--extra-small){
+    .footer{
+        & .footer_wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+            & .footer_logo{
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            & .footer_links{
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-self: center;
+                text-align: center;
+                margin-bottom: 4rem;
+                & ul{
+                    margin: 0 !important;
+                    margin-bottom: 2rem !important;
+                }
+            }
+
+        }
+        & .footer_payment{
+            text-align: center;
+            & .footer_payment_card{
+                justify-content: center;                
+            }
+        }
+
+        & .copyright{
+            text-align: center;
+        }
+    }
+}

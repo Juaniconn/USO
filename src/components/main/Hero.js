@@ -18,15 +18,15 @@ class Hero extends Component{
                         <div className="hero_steps">
                             <div className="hero_steps_item">
                                 <i className="icon-shop"></i>
-                                <p><span style={{color:"#FF3300"}}>1)</span> Choose Location</p>
+                                <p><span style={{color:"#FF3300"}}>1)</span> Escoge un restaurante</p>
                             </div>
                             <div className="hero_steps_item">
                                 <i className="icon-fastfood"></i>
-                                <p><span style={{color:"#FF3300"}}>2)</span> Choose Location</p>
+                                <p><span style={{color:"#FF3300"}}>2)</span> Elige tu comida favorita</p>
                             </div>
                             <div className="hero_steps_item">
                                 <i className="icon-delivery_dining"></i>
-                                <p><span style={{color:"#FF3300"}}>3)</span> Choose Location</p>
+                                <p><span style={{color:"#FF3300"}}>3)</span> Recoge tu comida</p>
                             </div>
                         </div>
                     </div>
